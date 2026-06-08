@@ -5,8 +5,8 @@ from Task_4 import *
 
 while True:
 
- print("1. To check the Registration Details of Vehicle")
- print("2. To check the Driver Registration Details")
+ print("1. To register new vehicle")
+ print("2. To Assign Driver")
  print("3. To check the Trip Expenses")
  print("4. To Track Deliveries")
  print("5. TO Exit")
@@ -16,7 +16,7 @@ while True:
   vehicle_registration(vehicle_num,register_num)
 
  elif choice==2:
-  driver_assignment(driver_name,driver_ID,driver_number,vehicle_num)
+  driver_assignment()
 
  elif choice==3:
   trip_expenses()

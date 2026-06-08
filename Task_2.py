@@ -1,12 +1,12 @@
-vehicle_num=[1101,1102,1103,1104,1105,1106,1107]
-driver_name=["harish","tharun","chandu","ramu","ravi","chandra","sekhar"]
-driver_number=[9133422126,7382860672,9492556119,7216484076,2763947673,5678926380,5764889890]
-driver_ID=[1231,1232,1233,1234,1235,1236,1237]
+from Task_1 import *
 
-def driver_assignment(driver_name,driver_ID,driver_number,vehicle_num):
+def driver_assignment():
        driver_details=[]
        for i in range (len(vehicle_num)):
-        driver={"vehicle number":vehicle_num[i],"driver name":driver_name[i],"driver id":driver_ID[i],"driver number":driver_number[i]}
+        driver_name=input("Enter the driver name for vehicle {} : ".format(vehicle_num[i]))
+        driver_ID=input("Enter the driver ID of {} : ".format(driver_name))
+        driver_number=input("Enter the {} contact number :".format(driver_name))
+        driver={"vehicle number":vehicle_num[i],"driver name":driver_name,"driver id":driver_ID,"driver number":driver_number}
         driver_details.append(driver)
 
        print("\n\t \t DRIVER DETAILS") 

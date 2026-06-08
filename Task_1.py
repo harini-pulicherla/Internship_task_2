@@ -1,9 +1,15 @@
 
-vehicle_num=[1101,1102,1103,1104,1105,1106,1107]
-register_num=[11515,11516,11517,11518,11519,11520,11521]
-seating_cap=[30,28,27,30,31,33,29]
+vehicle_num=[1101,1102,1103]
+register_num=[11515,11516,11517]
+seating_cap=[30,28,27]
 def vehicle_registration(vehicle_num,register_num):
     vehicle_details=[]
+    vehicle=input("Enter the vehicle number :")
+    register=input("Enter the register number of vehicle {} : ".format(vehicle))
+    seating=int(input("Enter the seating capacity of vehicle {} : ".format(vehicle)))
+    vehicle_num.append(vehicle)
+    register_num.append(register)
+    seating_cap.append(seating)
 
     for i in range (len(vehicle_num)):
      

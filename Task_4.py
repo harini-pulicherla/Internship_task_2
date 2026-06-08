@@ -1,5 +1,5 @@
-vehicle_num=[1101,1102,1103,1104,1105,1106,1107]
-tracking_id=[100000,100001,100002,100003,100004,100005,100006]
+from Task_1 import *
+tracking_id=[100000,100001,100002,100003]
 unique_id=[101,102,103,104,105,106,107]
 delivery_status=["delivered","shipped","reached destination","not delivered","delivered","shipped","reached destination"]
 def delivery_tracking():

@@ -1,11 +1,12 @@
-vehicle_num=[1101,1102,1103,1104,1105,1106,1107]
+from Task_1 import *
 distance=[258,351,420,395,330,444,495]
 service_charge=[1200,1500,2000,3400,1600,1400,1655]
 def trip_expenses():
        trip_expenses=[]
        fuel_cost=int(input("Enter the fuel cost per liter : "))
+       milage=int(input("Enter the milage of the vehicle :"))
        for i in range (len(vehicle_num)):
-        fuel_expense=fuel_cost*distance[i]     
+        fuel_expense=distance[i]//milage*fuel_cost    
         total_expense=fuel_expense+service_charge[i] 
         expenses={"vehicle_number":vehicle_num[i],"distance_travelled":distance[i],"service_charge":service_charge[i],"fuel_cost":fuel_expense,"total_trip_expense":total_expense}
         trip_expenses.append(expenses)
